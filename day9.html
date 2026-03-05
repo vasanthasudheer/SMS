@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Form</title>
+         <link rel="stylesheet" href="C:\Users\ADMIN\Pictures\day8.css">
+    </head>
+   <body>
+    <form>
+        <table>
+        <tr>
+            <td colspan="6" class="form-title">Student Form</td>
+         </tr>
+     <tr>
+            <td>First Name</td>
+            <td><input type="text" id="firstName"></td>
+            <td>Surname</td>
+            <td><input type="text" id="surname"></td>
+            <td>Age</td>
+            <td><input type="text" id="age"></td>
+            <td>Mobile Number</td>
+            <td><input type="text" id="mobileNumber"></td>
+     </tr>
+         <tr>
+         <td>Email </td>
+         <td><input type="text" id="Email"></td>
+         <td>Country</td>
+         <td>
+            <select id="country" onchange="onCountrychange(this.value)">
+                <option value="" selected disabled>Select A Country</option>
+                <option value="1">India</option>
+                <option value="2">Australia</option>
+            </select>
+         </td>
+        <td>State</td>
+        <td>
+            <select id="state" onchange="onStatechange(this.value)">
+                <option value="" selected disabled>Select A State</option>
+            </select>
+        </td>
+        <td>City</td>
+        <td>
+            <select id="city" onchange="onCitychange(this.value)">
+                <option value=""selected disabled>Select A City</option>
+            </select>
+        </td>
+         </tr>
+         <tr>
+            <td>University</td>
+            <td><select id="University" onchange="onUniversitychange(this.value)">
+                <option value="" selected disabled>Select A University</option>
+                 
+            </select>
+        </td>
+            <td>College</td>
+            <td>
+                <select id="college" onchange="oncollegechange(this.value)">
+                    <option value="" selected disabled>Selec A College</option>
+                </select>
+            </td>
+            <td>Program</td>
+            <td>
+                <select id="Program">
+                    <option value="" selected disabled>Select A Program</option>
+                    <option value="1">EEE</option>
+                    <option value="2">ECE</option>  
+                    <option value="3">Mechanical</option>
+                    <option value="4">AE</option>
+                    <option value="5">CSE</option>
+                  
+                   
+                </select>
+            </td>
+            <td>Year</td>
+            <td>
+                <select id="Year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </td>
+         </tr>
+        </table>
+        <br>
+        <center>
+            <button type="button" onclick="saveStudent()">SAVE </button>
+        </center>
+    </form>
+    <br>
+    <table id="studentTable" border="1">
+<thead>
+<tr>
+<th>S.no</th>
+<th>First Name</th>
+<th>Surname</th>
+<th>Age</th>
+<th>Mobile</th>
+<th>Email</th>
+<th>Country</th>
+<th>State</th>
+<th>City</th>
+<th>University</th>
+<th>College</th>
+<th>Program</th>
+<th>Year</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+
+
+    <br>
+    <script src="C:\Users\ADMIN\Pictures\day9.js"></script>
+   </body>
+</html>
+<!-- const student = {
+        firstName: document.getElementById("FirstName").value,
+        surname: document.getElementById("Surname").value,
+        age: document.getElementById("Age").value,
+        mobile: document.getElementById("MobileNumber").value,
+        email: document.getElementById("Email").value,
+        country: document.getElementById("country").value,
+        state: document.getElementById("state").value,
+        city: document.getElementById("city").value,
+        university: document.getElementById("University").value,
+        college: document.getElementById("college").value,
+        program: document.getElementById("Program").value,
+        year: document.getElementById("Year").value
+    };
+
+    if (editIndex !== null) {
+   
+        students[editIndex] = student;
+        editIndex = null;
+    } 
+    else {
+       
+        students.push(student);
+        // students.concate(student);
+    }
+
+    const tbody = document.querySelector("#studentTable tbody");
+    tbody.innerHTML = ""; 
+
+    students.forEach((stu, index) => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${index + 1}</td>
+            <td>${stu.firstName}</td>
+            <td>${stu.surname}</td>
+            <td>${stu.age}</td>
+            <td>${stu.mobile}</td>
+            <td>${stu.email}</td>
+            <td>${stu.country}</td>
+            <td>${stu.state}</td>
+            <td>${stu.city}</td>
+            <td>${stu.university}</td>
+            <td>${stu.college}</td>
+            <td>${stu.program}</td>
+            <td>${stu.year}</td>
+            <td>
+                <button onclick="editStudent(${index})">Edit</button>
+                <button onclick="deleteStudent(${index})">Delete</button>
+            </td>`;
+
+ tbody.appendChild(row);
+    });
+
+    clearForm(); -->
